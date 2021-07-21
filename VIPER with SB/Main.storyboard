@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sC-db-6g0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Greeting View Controller-->
+        <scene sceneID="5LW-fy-FFe">
+            <objects>
+                <viewController id="7sC-db-6g0" customClass="GreetingViewController" customModule="MV_X_Petterns" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="awb-3m-Nhq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJy-AS-WIi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <action selector="showGreetingPressed" destination="7sC-db-6g0" eventType="touchUpInside" id="Sbq-tC-QeL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tap to Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6N-gb-2RN">
+                                <rect key="frame" x="93" y="432.5" width="228" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cnZ-Dd-jhh"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cnZ-Dd-jhh" firstAttribute="trailing" secondItem="ZJy-AS-WIi" secondAttribute="trailing" id="9sP-9B-YrP"/>
+                            <constraint firstItem="ZJy-AS-WIi" firstAttribute="leading" secondItem="cnZ-Dd-jhh" secondAttribute="leading" id="DT2-9h-AOZ"/>
+                            <constraint firstItem="cnZ-Dd-jhh" firstAttribute="bottom" secondItem="ZJy-AS-WIi" secondAttribute="bottom" id="KSv-wh-N99"/>
+                            <constraint firstItem="D6N-gb-2RN" firstAttribute="centerX" secondItem="awb-3m-Nhq" secondAttribute="centerX" id="PJ9-0L-aGA"/>
+                            <constraint firstItem="D6N-gb-2RN" firstAttribute="centerY" secondItem="awb-3m-Nhq" secondAttribute="centerY" id="fM5-w3-aSL"/>
+                            <constraint firstItem="ZJy-AS-WIi" firstAttribute="top" secondItem="cnZ-Dd-jhh" secondAttribute="top" id="qdK-d3-niH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="D6N-gb-2RN" id="n36-WN-hoU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNl-Mh-z2g" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="-27"/>
+        </scene>
+    </scenes>
+</document>
